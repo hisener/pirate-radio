@@ -1,0 +1,58 @@
+{
+  "name": "pirate-radio",
+  "version": "1.0.0",
+  "description": "Pirate Radio",
+  "main": "src/server/index.js",
+  "scripts": {
+    "dev": "gulp watch & nodemon -w src/server --exec \"babel-node src/server\"",
+    "prestart": "gulp --env=production build",
+    "start": "NODE_ENV=production node dist/server",
+    "test": "standard && npm run test-node",
+    "test-node": "tape test/*.js"
+  },
+  "dependencies": {
+    "apicache": "^0.8.4",
+    "babel-cli": "^6.24.1",
+    "babel-core": "^6.24.1",
+    "babel-preset-es2015": "^6.24.1",
+    "babel-preset-react": "^6.24.1",
+    "babel-preset-stage-0": "^6.24.1",
+    "babelify": "^7.3.0",
+    "browserify": "^14.3.0",
+    "express": "^4.15.2",
+    "gulp": "^3.9.1",
+    "gulp-babel": "^6.1.2",
+    "gulp-uglify": "^2.1.2",
+    "gulp-util": "^3.0.8",
+    "isomorphic-fetch": "^2.2.1",
+    "material-ui": "^0.18.0",
+    "nodemon": "^1.11.0",
+    "prop-types": "^15.5.8",
+    "pug": "^2.0.0-beta.12",
+    "react": "^15.5.4",
+    "react-dom": "^15.5.4",
+    "react-media-player": "^0.6.1",
+    "react-redux": "^5.0.4",
+    "react-swipeable-views": "^0.12.1",
+    "react-tap-event-plugin": "^2.0.1",
+    "redux": "^3.6.0",
+    "redux-localstorage": "^0.4.1",
+    "redux-thunk": "^2.2.0",
+    "vinyl-buffer": "^1.0.0",
+    "vinyl-source-stream": "^1.1.0"
+  },
+  "devDependencies": {
+    "standard": "^10.0.2",
+    "tape": "^4.6.3"
+  },
+  "keywords": [
+    "pirate",
+    "radio"
+  ],
+  "author": {
+    "name": "Halil Ibrahim Sener",
+    "email": "hisener@yahoo.com",
+    "url": "http://halilsener.com/"
+  },
+  "license": "MIT"
+}
