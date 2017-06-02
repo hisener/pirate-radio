@@ -4,6 +4,7 @@
 
 [![Code Climate](https://codeclimate.com/github/hisener/pirate-radio/badges/gpa.svg)](https://codeclimate.com/github/hisener/pirate-radio)
 [![Standard - JavaScript Style Guide](https://img.shields.io/badge/code%20style-standard-brightgreen.svg)](http://standardjs.com/)
+
 [travis-image]: https://travis-ci.org/hisener/pirate-radio.svg?branch=master
 [travis-url]: https://travis-ci.org/hisener/pirate-radio
 
