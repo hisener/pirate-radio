@@ -5,7 +5,7 @@
   "main": "src/server/index.js",
   "scripts": {
     "dev": "gulp watch & nodemon -w src/server --exec \"babel-node src/server\"",
-    "prestart": "gulp --env=production build",
+    "postinstall": "gulp --env=production build",
     "start": "NODE_ENV=production node dist/server",
     "test": "standard && npm run test-node",
     "test-node": "tape test/*.js"
@@ -23,6 +23,7 @@
     "babel-preset-stage-0": "^6.24.1",
     "babelify": "^7.3.0",
     "browserify": "^14.3.0",
+    "compression": "^1.6.2",
     "express": "^4.15.2",
     "gulp": "^3.9.1",
     "gulp-babel": "^6.1.2",

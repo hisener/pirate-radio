@@ -22,10 +22,11 @@ localhost:3000
 ```
 
 ### Demo
-TOOD: Deploy on heroku
+https://pirate-radio.herokuapp.com/
 
 ### TODO
 - [ ] More documentation (mostly client side)
+- [ ] AppBar > More Icon > About
 
 ## License
 
