@@ -18,7 +18,9 @@ app.use(express.static(path.join(__dirname, '../../static')))
 app.use('/', routes)
 
 // compress all requests
-app.use(compression())
+app.use(compression({
+  filter: () => true
+}))
 
 // catch 404 and forward to error handler
 app.use(middlewares.notFound)
